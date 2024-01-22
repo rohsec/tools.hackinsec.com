@@ -1,7 +1,7 @@
 import streamlit as st
 
 def app():
-    st.title("Google Dorker 🚀")
+    st.header("🚀 Google Dorker",divider=True)
     inp=st.text_input(label="Domain",placeholder="Enter a daomin...")
     if st.button("Update Domain"):
         if(inp==""):

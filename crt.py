@@ -29,7 +29,7 @@ def crtsh(domain):
         st.error("Opps!! Techincial error occured.")
 
 def app():
-    st.title("Extract Subdomains from Crt.sh 🧾")
+    st.header("🧾 Extract Subdomains from Crt.sh",divider=True)
     inp=st.text_input("Target Domain",placeholder="Enter a domain here...")
     if st.button("Find Subdomains"):
         if(inp!=""):

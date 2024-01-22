@@ -2,7 +2,7 @@ import streamlit as st
 
 
 def app():
-    st.title("About ℹ️")
+    st.header("ℹ️ About",divider=True)
     st.text("Hi 👋! I am Rohit a.k.a rohsec. I am a full time BugBounty Hunter and HackerOne Ambassador.\nI like identifying vulnerabilities and helping organizations reinforce their defenses. \nI have ethically hacked and secured various big techs such as Sony, RedBull, BBC, Dutch Government etc.")
     st.image(image="https://i.postimg.cc/Jn2gYH24/rohsectemplatefont2.png")
     st.subheader("Socials")

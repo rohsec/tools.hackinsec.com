@@ -17,7 +17,7 @@ def extract_endpoints(urls):
     return endpoints
 
 def app():
-    st.title("Extract Endpoints ↗️")
+    st.header("↗️ Extract Endpoints",divider=True)
 # Streamlit User Input
     user_input_urls = st.text_area("Enter URLs (one per line):",height=200,placeholder="Enter your urls here...")
 

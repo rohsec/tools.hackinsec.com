@@ -27,7 +27,7 @@ def extract_parameters(urls):
 
 
 def app():
-    st.title("Extract Parameters ✂️")
+    st.header("✂️ Extract Parameters",divider=True)
     inp = st.text_area(label="Enter URLs (one per line):",height=200,placeholder="Enter your urls here...")
     url_lines=[line.strip() for line in inp.split('\n') if line.strip()]
     if st.button("Extract"):
