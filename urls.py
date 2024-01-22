@@ -12,10 +12,10 @@ def app():
         divider=True
     )
     # st.title("Open URLs in New Tabs 🔗")
-    urls = st.text_area("Enter URLs (one per line)", height=200)
+    urls = st.text_area("Enter URLs (one per line)", height=200,disabled=True)
     urls_list = [url.strip() for url in urls.split('\n') if url.strip()]
 
-    if st.button("Open URLs in New Tabs"):
+    if st.button("Open URLs in New Tabs",disabled=True):
         if urls_list:
             with st.spinner("Opening URLs..."):
                 open_urls_in_tabs(urls_list)
@@ -23,3 +23,4 @@ def app():
             st.snow()
         else:
             st.warning("Please enter at least one URL.")
+    st.info("🚧 Work In Progress: This tool is coming soon...")
